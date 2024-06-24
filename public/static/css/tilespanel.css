@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 2.2属性面板开始 */
+.tilespanel {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 300px;
+  height: 416px;
+  overflow: hidden;
+  background-color: rgba(17, 17, 17, 0.88);
+  border: 1px solid #333;
+  font-size: 14px;
+  line-height: 1.5;
+  display: none;
+}
+
+.tilespanel .tilestitle {
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.88);
+  padding: 10px 30px 10px 10px;
+  line-height: 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #666;
+  color: white;
+  cursor: move;
+}
+
+.tilespanel .tilesclose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  z-index: 99;
+  font-size: 16px;
+  line-height: 16px;
+  color: white;
+}
+
+.tilespanel .tilespanel-body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+
+.tilespanel .tilespanel-body .tilespanel-tips {
+  font-size: 12px;
+  margin-top: 36px;
+  text-align: center;
+  color: #999;
+  display: block;
+}
+
+.tilespanel .tilespanel-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.tilespanel .scroll-bar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(153, 153, 153, 0.8);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #6c717966;
+}
+
+.tilespanel .tilespanel-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  border-spacing: 0;
+  display: table;
+  text-indent: initial;
+  color: #fff;
+}
+
+.tilespanel .tilespanel-table tr {
+  display: table-row;
+  vertical-align: inherit;
+  cursor: default;
+}
+
+.tilespanel .tilespanel-table td {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 20px;
+  padding: 5px;
+  border: 1px solid #3f3f3f;
+}
+
+.tilespanel .tilespanel-table .group .group-title {
+  background-color: rgba(85, 85, 85, 0.45);
+}
+
+.tilespanel .tilespanel-table .group .group-title td {
+  color: #fff;
+  border-bottom: 1px solid #666;
+}
+
+.tilespanel .tilespanel-table .group .group-title td .icon {
+  position: relative;
+  float: left;
+  font-style: normal;
+  padding: 0px;
+}
+
+.tilespanel .tilespanel-table .group .group-title td .icon::before {
+
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-right: 8px solid #666;
+  border-top: 8px solid transparent;
+}
+
+.iconClose::before {
+  transform: rotate(-40deg);
+  -webkit-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+}
+
+.tilespanel .tilespanel-table .group .key {
+  color: #999;
+  padding-left: 26px;
+  width: 40%;
+}
+
+.tilespanel .tilespanel-table .group .value {
+  color: #ccc;
+}
+
+.tilespanel .resize {
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.tilespanel .resize::after {
+  display: block;
+  float: right;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAABGdBTUEAALGPC/xhBQAAAF5JREFUCB1jYEADq1at4r927dpOJmRxkKC+vv5ORkbGG3BxkODNmzdPXL9+fSJWwf///zNfvnx5CTNM+79//05qaGgUAXUtBeoQYARZBDJTU1MzH6SSiYlJaMaMGYEA7E42FFiHq5AAAAAASUVORK5CYII=) no-repeat;
+  cursor: nw-resize;
+}
+
+/* 2.2属性面板结束 */

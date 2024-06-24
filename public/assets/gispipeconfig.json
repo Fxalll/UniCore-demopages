@@ -1,0 +1,2922 @@
+{
+  "pipelines": [
+    {
+      "id": "雨水管主线-01",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.251451465322,
+          49.4
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.251713632255,
+          49
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 1,
+            "name": null
+          },
+          {
+            "id": 2,
+            "name": null
+          },
+          {
+            "id": 3,
+            "name": null
+          },
+          {
+            "id": 4,
+            "name": null
+          },
+          {
+            "id": 161,
+            "name": null
+          },
+          {
+            "id": 162,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管主线-02",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.251713632255,
+          49
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.252063188165,
+          48.5
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 5,
+            "name": null
+          },
+          {
+            "id": 6,
+            "name": null
+          },
+          {
+            "id": 7,
+            "name": null
+          },
+          {
+            "id": 8,
+            "name": null
+          },
+          {
+            "id": 9,
+            "name": null
+          },
+          {
+            "id": 163,
+            "name": null
+          },
+          {
+            "id": 164,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管主线-03",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.252063188165,
+          48.5
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.252412744075,
+          48.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 10,
+            "name": null
+          },
+          {
+            "id": 11,
+            "name": null
+          },
+          {
+            "id": 12,
+            "name": null
+          },
+          {
+            "id": 13,
+            "name": null
+          },
+          {
+            "id": 14,
+            "name": null
+          },
+          {
+            "id": 165,
+            "name": null
+          },
+          {
+            "id": 166,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管主线-04",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.252412744075,
+          48.1
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.252762299985,
+          47.7
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 15,
+            "name": null
+          },
+          {
+            "id": 16,
+            "name": null
+          },
+          {
+            "id": 17,
+            "name": null
+          },
+          {
+            "id": 18,
+            "name": null
+          },
+          {
+            "id": 19,
+            "name": null
+          },
+          {
+            "id": 167,
+            "name": null
+          },
+          {
+            "id": 168,
+            "name": null
+          },
+          {
+            "id": 169,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管主线-05",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.252762299985,
+          47.7
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.253111855895,
+          47.3
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 20,
+            "name": null
+          },
+          {
+            "id": 21,
+            "name": null
+          },
+          {
+            "id": 22,
+            "name": null
+          },
+          {
+            "id": 23,
+            "name": null
+          },
+          {
+            "id": 24,
+            "name": null
+          },
+          {
+            "id": 170,
+            "name": null
+          },
+          {
+            "id": 171,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管主线-06",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.253111855895,
+          47.3
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.253461411805,
+          47
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 25,
+            "name": null
+          },
+          {
+            "id": 26,
+            "name": null
+          },
+          {
+            "id": 27,
+            "name": null
+          },
+          {
+            "id": 28,
+            "name": null
+          },
+          {
+            "id": 29,
+            "name": null
+          },
+          {
+            "id": 172,
+            "name": null
+          },
+          {
+            "id": 173,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管主线-07",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.253461411805,
+          47
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.253810967715,
+          46.5
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 30,
+            "name": null
+          },
+          {
+            "id": 31,
+            "name": null
+          },
+          {
+            "id": 32,
+            "name": null
+          },
+          {
+            "id": 33,
+            "name": null
+          },
+          {
+            "id": 34,
+            "name": null
+          },
+          {
+            "id": 174,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管主线-08",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.253810967715,
+          46.5
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.254160523625,
+          46
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 35,
+            "name": null
+          },
+          {
+            "id": 36,
+            "name": null
+          },
+          {
+            "id": 37,
+            "name": null
+          },
+          {
+            "id": 38,
+            "name": null
+          },
+          {
+            "id": 39,
+            "name": null
+          },
+          {
+            "id": 175,
+            "name": null
+          },
+          {
+            "id": 176,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管主线-09",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.254160523625,
+          46
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.254440168353,
+          45.5
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 40,
+            "name": null
+          },
+          {
+            "id": 41,
+            "name": null
+          },
+          {
+            "id": 42,
+            "name": null
+          },
+          {
+            "id": 43,
+            "name": null
+          },
+          {
+            "id": 177,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管主线-10",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.254440168353,
+          45.5
+        ],
+        "endPos": [
+          113.12723212539672,
+          28.254549990717,
+          45.6
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 44,
+            "name": null
+          },
+          {
+            "id": 45,
+            "name": null
+          },
+          {
+            "id": 178,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管主线-11",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12723212539672,
+          28.254549990717,
+          45.6
+        ],
+        "endPos": [
+          113.12723212539672,
+          28.254619901899,
+          45.8
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 46,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-1井-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12734453385162,
+          28.251416465322,
+          49.1
+        ],
+        "endPos": [
+          113.12731453385162,
+          28.251416465322,
+          49.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 47,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-1井-2",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.251406465322,
+          49.1
+        ],
+        "endPos": [
+          113.12736453385162,
+          28.251406465322,
+          49.1
+        ],
+        "rotate": [
+          10,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 48,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-2井-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12734453385162,
+          28.251678632255,
+          49.1
+        ],
+        "endPos": [
+          113.12731453385162,
+          28.251678632255,
+          49.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 49,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-2井-2",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.251668632255,
+          49.1
+        ],
+        "endPos": [
+          113.12736453385162,
+          28.251668632255,
+          49.1
+        ],
+        "rotate": [
+          10,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 50,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-3井-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12734453385162,
+          28.252028188165,
+          49.1
+        ],
+        "endPos": [
+          113.12731453385162,
+          28.252028188165,
+          49.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 51,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-3井-2",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.252018188165,
+          49.1
+        ],
+        "endPos": [
+          113.12736453385162,
+          28.252018188165,
+          49.1
+        ],
+        "rotate": [
+          10,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 52,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-4井-1-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12734453385162,
+          28.252397744074998,
+          48.1
+        ],
+        "endPos": [
+          113.12726453385162,
+          28.252429744075,
+          48.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 53,
+            "name": null
+          },
+          {
+            "id": 54,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-4井-1-2",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12724603385162,
+          28.252467744075,
+          48.1
+        ],
+        "endPos": [
+          113.12724453385162,
+          28.252491744075,
+          48.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 55,
+            "name": null
+          },
+          {
+            "id": 56,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-4井-2-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12736053385162,
+          28.252385607824,
+          48.1
+        ],
+        "endPos": [
+          113.12744053385162,
+          28.252325607824,
+          48.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 57,
+            "name": null
+          },
+          {
+            "id": 58,
+            "name": null
+          },
+          {
+            "id": 59,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-4井-3-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12732553385162,
+          28.252390307824,
+          48.1
+        ],
+        "endPos": [
+          113.12742453385162,
+          28.252424307824,
+          48.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 60,
+            "name": null
+          },
+          {
+            "id": 61,
+            "name": null
+          },
+          {
+            "id": 62,
+            "name": null
+          },
+          {
+            "id": 63,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-5井-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12734453385162,
+          28.252727299985,
+          49.1
+        ],
+        "endPos": [
+          113.12731453385162,
+          28.252727299985,
+          49.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 64,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-5井-2",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.252717299985,
+          49.1
+        ],
+        "endPos": [
+          113.12736453385162,
+          28.252717299985,
+          49.1
+        ],
+        "rotate": [
+          10,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 65,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-6井-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12734453385162,
+          28.253076855895,
+          49.1
+        ],
+        "endPos": [
+          113.12731453385162,
+          28.253076855895,
+          49.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 66,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-6井-2",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.253066855895,
+          49.1
+        ],
+        "endPos": [
+          113.12736453385162,
+          28.253066855895,
+          49.1
+        ],
+        "rotate": [
+          10,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 67,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-7井-1-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12734453385162,
+          28.253434434983,
+          48.1
+        ],
+        "endPos": [
+          113.12726453385162,
+          28.253464434983,
+          48.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 68,
+            "name": null
+          },
+          {
+            "id": 69,
+            "name": null
+          },
+          {
+            "id": 70,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-7井-1-2",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12721353385162,
+          28.253504434983,
+          48.1
+        ],
+        "endPos": [
+          113.12721053385162,
+          28.253554434983,
+          48.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 71,
+            "name": null
+          },
+          {
+            "id": 72,
+            "name": null
+          },
+          {
+            "id": 73,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-7井-2-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733053385162,
+          28.253444434983,
+          48.1
+        ],
+        "endPos": [
+          113.12740453385162,
+          28.253499434983,
+          48.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 74,
+            "name": null
+          },
+          {
+            "id": 75,
+            "name": null
+          },
+          {
+            "id": 76,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-7井-2-2",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12744053385162,
+          28.253530434983,
+          48.1
+        ],
+        "endPos": [
+          113.12743053385162,
+          28.253594434983,
+          48.1
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 77,
+            "name": null
+          },
+          {
+            "id": 78,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-8井-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12734453385162,
+          28.253775967715,
+          46.5
+        ],
+        "endPos": [
+          113.12731453385162,
+          28.253775967715,
+          46.5
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 79,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-8井-2",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.253765967715,
+          46.5
+        ],
+        "endPos": [
+          113.12736453385162,
+          28.253765967715,
+          46.5
+        ],
+        "rotate": [
+          10,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 80,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-9井-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12734453385162,
+          28.254125523625,
+          46
+        ],
+        "endPos": [
+          113.12731453385162,
+          28.254125523625,
+          46
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 81,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-9井-2",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.254115523625,
+          46
+        ],
+        "endPos": [
+          113.12736453385162,
+          28.254115523625,
+          46
+        ],
+        "rotate": [
+          10,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 82,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-10井-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12734453385162,
+          28.254406465656,
+          45.5
+        ],
+        "endPos": [
+          113.12731453385162,
+          28.254406465656,
+          45.5
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 83,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管支线-10井-2",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.254396465656,
+          45.5
+        ],
+        "endPos": [
+          113.12736453385162,
+          28.254396465656,
+          45.5
+        ],
+        "rotate": [
+          10,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 84,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管主线-01",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12743553385162,
+          28.252977757159,
+          42
+        ],
+        "endPos": [
+          113.12743553385162,
+          28.253327313069,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 90,
+            "name": null
+          },
+          {
+            "id": 91,
+            "name": null
+          },
+          {
+            "id": 92,
+            "name": null
+          },
+          {
+            "id": 93,
+            "name": null
+          },
+          {
+            "id": 94,
+            "name": null
+          },
+          {
+            "id": 179,
+            "name": null
+          },
+          {
+            "id": 180,
+            "name": null
+          },
+          {
+            "id": 181,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管支线-01-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12722453385162,
+          28.252927757159,
+          42
+        ],
+        "endPos": [
+          113.12736053385162,
+          28.252927757159,
+          42
+        ],
+        "rotate": [
+          5,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 85,
+            "name": null
+          },
+          {
+            "id": 86,
+            "name": null
+          },
+          {
+            "id": 87,
+            "name": null
+          },
+          {
+            "id": 88,
+            "name": null
+          },
+          {
+            "id": 89,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管主线-02",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12743553385162,
+          28.253327313069,
+          42
+        ],
+        "endPos": [
+          113.12743553385162,
+          28.253676868979,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 95,
+            "name": null
+          },
+          {
+            "id": 96,
+            "name": null
+          },
+          {
+            "id": 97,
+            "name": null
+          },
+          {
+            "id": 98,
+            "name": null
+          },
+          {
+            "id": 99,
+            "name": null
+          },
+          {
+            "id": 182,
+            "name": null
+          },
+          {
+            "id": 183,
+            "name": null
+          },
+          {
+            "id": 184,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管主线-03",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12743553385162,
+          28.253676868979,
+          42
+        ],
+        "endPos": [
+          113.12743553385162,
+          28.254026424889,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 100,
+            "name": null
+          },
+          {
+            "id": 101,
+            "name": null
+          },
+          {
+            "id": 102,
+            "name": null
+          },
+          {
+            "id": 103,
+            "name": null
+          },
+          {
+            "id": 104,
+            "name": null
+          },
+          {
+            "id": 185,
+            "name": null
+          },
+          {
+            "id": 186,
+            "name": null
+          },
+          {
+            "id": 187,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管支线-03-1",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12722453385162,
+          28.253626868978998,
+          42
+        ],
+        "endPos": [
+          113.12736053385162,
+          28.253626868978998,
+          42
+        ],
+        "rotate": [
+          5,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 105,
+            "name": null
+          },
+          {
+            "id": 106,
+            "name": null
+          },
+          {
+            "id": 107,
+            "name": null
+          },
+          {
+            "id": 108,
+            "name": null
+          },
+          {
+            "id": 109,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管主线-04",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12743553385162,
+          28.254026424889,
+          42
+        ],
+        "endPos": [
+          113.12743553385162,
+          28.254375980799,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 110,
+            "name": null
+          },
+          {
+            "id": 111,
+            "name": null
+          },
+          {
+            "id": 112,
+            "name": null
+          },
+          {
+            "id": 113,
+            "name": null
+          },
+          {
+            "id": 114,
+            "name": null
+          },
+          {
+            "id": 188,
+            "name": null
+          },
+          {
+            "id": 189,
+            "name": null
+          },
+          {
+            "id": 190,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管主线-05",
+      "model": "../assets/3Dtiles/changshaPipe/tileset.json",
+      "children": {
+        "startPos": [
+          113.12743553385162,
+          28.254375980799,
+          42
+        ],
+        "endPos": [
+          113.12743553385162,
+          28.254501820927,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          90
+        ],
+        "scale": 13,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 115,
+            "name": null
+          },
+          {
+            "id": 116,
+            "name": null
+          },
+          {
+            "id": 191,
+            "name": null
+          }
+        ]
+      }
+    }
+  ],
+  "wells": [
+    {
+      "id": "雨水管检查井-01",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.251451465322,
+          49.4
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.251451465322,
+          49.4
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 117,
+            "name": "Y1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管检查井-02",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.251713632255,
+          49
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.251713632255,
+          49
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 118,
+            "name": "Y2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管检查井-03",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.252063188165,
+          48.5
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.252063188165,
+          48.5
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 119,
+            "name": "Y3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管检查井-04",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.252412744075,
+          48.1
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.252412744075,
+          48.1
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 120,
+            "name": "Y4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管检查井-05",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.252762299985,
+          47.7
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.252762299985,
+          47.7
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 121,
+            "name": "Y5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管检查井-06",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.253111855895,
+          47.3
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.253111855895,
+          47.3
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 122,
+            "name": "Y6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管检查井-07",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.253461411805,
+          47
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.253461411805,
+          47
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 123,
+            "name": "Y7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管检查井-08",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.253810967715,
+          46.5
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.253810967715,
+          46.5
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 124,
+            "name": "Y8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管检查井-09",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.254160523625,
+          46
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.254160523625,
+          46
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 125,
+            "name": "Y9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管检查井-10",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12733453385162,
+          28.254441465656,
+          45.5
+        ],
+        "endPos": [
+          113.12733453385162,
+          28.254441465656,
+          45.5
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 126,
+            "name": "Y10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管检查井-11",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12723212539672,
+          28.254549990717,
+          45.6
+        ],
+        "endPos": [
+          113.12723212539672,
+          28.254549990717,
+          45.6
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 127,
+            "name": "Y11"
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管检查井-12",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12723212539672,
+          28.254619901899,
+          45.8
+        ],
+        "endPos": [
+          113.12723212539672,
+          28.254619901899,
+          45.8
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 128,
+            "name": "Y12"
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管检查井-1-1",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12725112539672,
+          28.252967757159002,
+          42
+        ],
+        "endPos": [
+          113.12725112539672,
+          28.252967757159002,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 129,
+            "name": "W1-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管检查井-1",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12743553385162,
+          28.252977757159,
+          42
+        ],
+        "endPos": [
+          113.12743553385162,
+          28.252977757159,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 130,
+            "name": "W1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管检查井-2",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12743553385162,
+          28.253327313069,
+          42
+        ],
+        "endPos": [
+          113.12743553385162,
+          28.253327313069,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 131,
+            "name": "W2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管检查井-3",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12743553385162,
+          28.253676868979,
+          42
+        ],
+        "endPos": [
+          113.12743553385162,
+          28.253676868979,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 132,
+            "name": "W3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管检查井-3-1",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12725303385162,
+          28.253666868979,
+          42
+        ],
+        "endPos": [
+          113.12725303385162,
+          28.253666868979,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 133,
+            "name": "W3-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管检查井-4",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12743553385162,
+          28.254026424889,
+          42
+        ],
+        "endPos": [
+          113.12743553385162,
+          28.254026424889,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 134,
+            "name": "W4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管检查井-5",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12743553385162,
+          28.254375980799,
+          42
+        ],
+        "endPos": [
+          113.12743553385162,
+          28.254375980799,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 135,
+            "name": "W5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "污水管检查井-6",
+      "model": "../assets/gltf/ws1.glb",
+      "children": {
+        "startPos": [
+          113.12743553385162,
+          28.254501820927,
+          42
+        ],
+        "endPos": [
+          113.12743553385162,
+          28.254501820927,
+          42
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 12,
+        "isFixPos": true,
+        "children": [
+          {
+            "id": 136,
+            "name": "W6"
+          }
+        ]
+      }
+    }
+  ],
+  "raininlet": [
+    {
+      "id": "雨水管雨水口-1井-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12725453385162,
+          28.251431465322,
+          50
+        ],
+        "endPos": [
+          113.12725453385162,
+          28.251431465322,
+          50
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 137,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-1井-2",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12743453385162,
+          28.251421465322,
+          50
+        ],
+        "endPos": [
+          113.12743453385162,
+          28.251421465322,
+          50
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 138,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-2井-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12725453385162,
+          28.251693632255,
+          50
+        ],
+        "endPos": [
+          113.12725453385162,
+          28.251693632255,
+          50
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 139,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-2井-2",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12743453385162,
+          28.251683632255002,
+          50
+        ],
+        "endPos": [
+          113.12743453385162,
+          28.251683632255002,
+          50
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 140,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-3井-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12725453385162,
+          28.252043188165,
+          49
+        ],
+        "endPos": [
+          113.12725453385162,
+          28.252043188165,
+          49
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 141,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-3井-2",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12743453385162,
+          28.252033188165,
+          49
+        ],
+        "endPos": [
+          113.12743453385162,
+          28.252033188165,
+          49
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 142,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-4井-1-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12723253385162,
+          28.252420307824,
+          49
+        ],
+        "endPos": [
+          113.12723253385162,
+          28.252440307824,
+          49
+        ],
+        "rotate": [
+          -20,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 143,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-4井-1-2",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12728053385162,
+          28.252462307824,
+          49
+        ],
+        "endPos": [
+          113.12728053385162,
+          28.252462307824,
+          49
+        ],
+        "rotate": [
+          90,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 144,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-4井-2-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12743153385162,
+          28.252304307824,
+          49
+        ],
+        "endPos": [
+          113.12742453385162,
+          28.252314307824,
+          49
+        ],
+        "rotate": [
+          30,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 145,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-4井-3-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12748353385162,
+          28.252364307824,
+          49
+        ],
+        "endPos": [
+          113.12745353385162,
+          28.252369307824,
+          49
+        ],
+        "rotate": [
+          150,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 146,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-5井-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12725453385162,
+          28.252742299985,
+          49.5
+        ],
+        "endPos": [
+          113.12725453385162,
+          28.252742299985,
+          49.5
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 147,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-5井-2",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12743453385162,
+          28.252732299985002,
+          49.5
+        ],
+        "endPos": [
+          113.12743453385162,
+          28.252732299985002,
+          49.5
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 148,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-6井-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12725453385162,
+          28.253091855895,
+          49.5
+        ],
+        "endPos": [
+          113.12725453385162,
+          28.253091855895,
+          49.5
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 149,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-6井-2",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12743453385162,
+          28.253081855895,
+          49.5
+        ],
+        "endPos": [
+          113.12743453385162,
+          28.253081855895,
+          49.5
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 150,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-7井-1-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12720553385162,
+          28.253464434983,
+          49
+        ],
+        "endPos": [
+          113.12724553385162,
+          28.253464434983,
+          49
+        ],
+        "rotate": [
+          -20,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 151,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-7井-1-2",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12723753385162,
+          28.253520434983,
+          49
+        ],
+        "endPos": [
+          113.12725753385162,
+          28.253504434983,
+          49
+        ],
+        "rotate": [
+          105,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 152,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-7井-2-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12747253385162,
+          28.253490434983,
+          49
+        ],
+        "endPos": [
+          113.12743253385162,
+          28.253490434983,
+          49
+        ],
+        "rotate": [
+          30,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 153,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-7井-2-2",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12746053385162,
+          28.253546434983,
+          49
+        ],
+        "endPos": [
+          113.12744053385162,
+          28.253524434983,
+          49
+        ],
+        "rotate": [
+          95,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 154,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-8井-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12725453385162,
+          28.253790967715002,
+          46.8
+        ],
+        "endPos": [
+          113.12725453385162,
+          28.253790967715002,
+          46.8
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 155,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-8井-2",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12743453385162,
+          28.253780967715002,
+          46.8
+        ],
+        "endPos": [
+          113.12743453385162,
+          28.253780967715002,
+          46.8
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 156,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-9井-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12725453385162,
+          28.254140523625,
+          46.8
+        ],
+        "endPos": [
+          113.12725453385162,
+          28.254140523625,
+          46.8
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 157,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-9井-2",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12743453385162,
+          28.254130523625,
+          46.8
+        ],
+        "endPos": [
+          113.12743453385162,
+          28.254130523625,
+          46.8
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 158,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-10井-1",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12726053385162,
+          28.254421465656,
+          46.5
+        ],
+        "endPos": [
+          113.12726053385162,
+          28.254421465656,
+          46.5
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 159,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "雨水管雨水口-10井-2",
+      "model": "../assets/gltf/偏沟式双箅雨水口.glb",
+      "children": {
+        "startPos": [
+          113.12743453385162,
+          28.254411465656002,
+          46.5
+        ],
+        "endPos": [
+          113.12743453385162,
+          28.254411465656002,
+          46.5
+        ],
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.8,
+        "isFixPos": false,
+        "children": [
+          {
+            "id": 160,
+            "name": null
+          }
+        ]
+      }
+    }
+  ]
+}

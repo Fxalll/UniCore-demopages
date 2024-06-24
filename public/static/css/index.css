@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", MicrosoftYaHei SimSun, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #eee;
+  overflow: hidden;
+  padding: 0 !important;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* 1.header开始 */
+.header {
+  height: 50px;
+  background-color: #282828;
+  padding: 0 10px;
+  z-index: 100;
+}
+
+.header .logo {
+  float: left;
+  /* background: url('../../logo.png') no-repeat 0 center; */
+  width: 192px;
+  height: 50px;
+  display: block !important;
+}
+
+/* 1.header结束 */
+/* 操作说明开始 */
+.note {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  color: rgb(45, 41, 23);
+  font-size: x-large;
+  text-align: center;
+  z-index: 99;
+}
+
+/* 操作说明结束 */
+/* 2.容器开始 */
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: rgb(12, 12, 12);
+}
+
+/* 2.1unicore开始 */
+#unicoreContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* 2.1unicore结束 */
+
+
+/* 2.2属性面板开始 */
+/* 2.2属性面板结束 */
+
+
+/* 2.3bottom-toolbar开始 */
+/* 2.3bottom-toolbar结束 */
+
+
+/* 2.3tree-toolbar-开始 */
+/* 2.3tree-toolbar结束 */
+/* 2.容器结束 */

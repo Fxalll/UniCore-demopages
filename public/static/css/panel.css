@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 2.2属性面板开始 */
+.panel {
+  position: absolute;
+  right: 35vw;
+  top: 130px;
+  width: 30%;
+  height: 70vh;
+  background-color: rgba(17, 17, 17, 0.5);
+  border-radius: 24px;
+  font-size: 14px;
+  line-height: 1.5;
+  display: none;
+  text-align: left;
+}
+
+.phonePanel {
+  position: absolute;
+  right: 5vw;
+  bottom: 40vw;
+  width: 90vw;
+  height: 130vw;
+  background-color: rgba(17, 17, 17, 0.5);
+  border-radius: 24px;
+  font-size: 14px;
+  line-height: 1.5;
+  display: none;
+  text-align: left;
+  padding-left: 2vw;
+  z-index: 999;
+}
+
+.panel .title {
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.88);
+  padding: 10px 30px 10px 10px;
+  line-height: 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #666;
+  color: white;
+  opacity: 0.5;
+  cursor: move;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  z-index: 99;
+  font-size: 16px;
+  line-height: 16px;
+  color: white;
+}
+
+.panel .panel-body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+
+.panel .panel-body .panel-tips {
+  font-size: 12px;
+  margin-top: 36px;
+  text-align: center;
+  color: #999;
+  display: block;
+}
+
+.panel .panel-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.panel .scroll-bar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(153, 153, 153, 0.8);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #6c717966;
+}
+
+.panel .panel-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  border-spacing: 0;
+  display: table;
+  text-indent: initial;
+  color: #fff;
+}
+
+.panel .panel-table tr {
+  display: table-row;
+  vertical-align: inherit;
+  cursor: default;
+}
+
+.panel .panel-table td {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 20px;
+  padding: 5px;
+  border: 7px solid #3f3f3f00;
+}
+
+.panel .panel-table .group .group-title {
+  background-color: rgba(85, 85, 85, 0.45);
+}
+
+.panel .panel-table .group .group-title td {
+  color: #fff;
+  border-bottom: 1px solid #666;
+}
+
+.panel .panel-table .group .group-title td .icon {
+  position: relative;
+  float: left;
+  font-style: normal;
+  padding: 0px;
+}
+
+.panel .panel-table .group .group-title td .icon::before {
+
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-right: 8px solid #666;
+  border-top: 8px solid transparent;
+}
+
+.iconClose::before {
+  transform: rotate(-40deg);
+  -webkit-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+}
+
+.panel .panel-table .group .key {
+  color: #999;
+  padding-left: 26px;
+  width: 40%;
+}
+
+.panel .panel-table .group .value {
+  color: #ccc;
+}
+
+.panel .resize {
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.panel .resize::after {
+  display: block;
+  float: right;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAABGdBTUEAALGPC/xhBQAAAF5JREFUCB1jYEADq1at4r927dpOJmRxkKC+vv5ORkbGG3BxkODNmzdPXL9+fSJWwf///zNfvnx5CTNM+79//05qaGgUAXUtBeoQYARZBDJTU1MzH6SSiYlJaMaMGYEA7E42FFiHq5AAAAAASUVORK5CYII=) no-repeat;
+  cursor: nw-resize;
+}
+
+.icon {
+  width: 100% !important;
+}
+
+/* 2.2属性面板结束 */
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(144, 147, 153, 0);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
