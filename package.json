@@ -8,8 +8,9 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "unicore-sdk": "^1.0.2",
+    "unicore-sdk": "^1.0.7",
     "vue": "^2.6.14",
+    "vue-giant-tree": "^0.1.0",
     "vue-router": "^3.5.1"
   },
   "devDependencies": {
