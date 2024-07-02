@@ -1,5 +1,8 @@
 <template>
   <div id="unicoreContainer">
+    <!-- 底图分割卡片开始 -->
+    <lsSet ref="lsSetId"></lsSet>
+    <!-- 底图分割树卡片结束 -->
     <!-- 图层管理树卡片开始 -->
     <lcSet ref="lcSetId"></lcSet>
     <!-- 图层管理树卡片结束 -->
@@ -14,12 +17,13 @@
 import { UniCore } from 'unicore-sdk'
 import { config } from 'unicore-sdk/unicore.config'
 import 'unicore-sdk/Widgets/widgets.css'
+import lsSet from '@/components/LayerSplitSet/index.vue'; //底图分割组件
 import lcSet from '@/components/LayerControlSet/index.vue'; //图层管理树组件
+import * as Cesium from 'cesium'
 
 export default {
-
   components: {
-    lcSet
+    lsSet, lcSet
   },
   // 生命周期 - 挂载完成（可以访问DOM元素）
   mounted () {
@@ -41,11 +45,9 @@ export default {
       // 初始化unicore
       let uniCore = new UniCore(config, accessToken);
       uniCore.init("unicoreContainer");
-      window.uniCore = uniCore;
-      let viewer = uniCore.viewer;
 
       // 视角初始化
-      uniCore.position.buildingPosition(viewer, [113.12380548015745, 28.250758831850005, 700], -20, -45, 1);
+      uniCore.position.buildingPosition(uniCore.viewer, [113.12380548015745, 28.250758831850005, 700], -20, -45, 1);
 
       // 模型示例1
       const options = {
@@ -54,7 +56,21 @@ export default {
         propertysURL: '../../assets/3Dtiles/sample3_方法2_小别墅属性(1)/01 小别墅.json'
       }
       //加载3dtiles
-      uniCore.model.createTileset(options.url, options).then(cityModel => {
+      uniCore.model.createTileset(options.url, options, (tileset) => {
+        let customShader = new Cesium.CustomShader({
+          // lightingModel: Cesium.LightingModel.UNLIT,
+          lightingModel: Cesium.LightingModel.PBR,
+          //片元着色器
+          fragmentShaderText: `
+          void fragmentMain(FragmentInput fsInput, inout czm_modelMaterial material) {
+            vec3 positionMC = fsInput.attributes.positionMC;
+            //此处以下为光线效果
+            material.diffuse += material.diffuse * (1.0);
+          }`
+        })
+
+        tileset.customShader = customShader
+      }).then(cityModel => {
         uniCore.model.changeModelPos(cityModel, [113.12098820449636, 28.256150218457687, 130], [0, 0, 0], [23.8, 23.8, 23.8])
 
         // 绑定信息树
@@ -96,6 +112,7 @@ export default {
       }], (property) => console.log(property), () => console.log("BIM"), () => console.log("GIS"));
 
 
+
       // 加入墙体图元 primitives
       uniCore.model.paintWall("墙体测试", [[113.12380548015745, 28.260758831850005], [113.12380548015745, 28.240758831850005]], 500, 100, "#e46962")
       uniCore.model.paintLine("线条测试", [[113.12123548015745, 28.280758831850005], [113.12380548015745, 28.240758831850005], [113.12070548015745, 28.240758831850005]], 75, "#c3e88d", 5)
@@ -116,10 +133,17 @@ export default {
       uniCore.tip.createHtmlTip("test2", [113.12374548015745, 28.256150218457687, 50], false)
 
 
+
+      this.$refs.lsSetId.init(new Cesium.UrlTemplateImageryProvider({
+        url: "https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png",
+        subdomains: ["a", "b", "c", "d"],
+
+      }));
+
       // 原本设计是作为开关调用的，这里使用定时器先展示功能
       setTimeout(() => {
         // 图层树初始化
-        this.$refs.lcSetId.init();
+        this.$refs.lcSetId.init(uniCore);
       }, 1000)
 
     }

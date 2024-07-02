@@ -16,6 +16,7 @@
 
 <script type="text/javascript">
 import tree from 'vue-giant-tree'
+import * as Cesium from 'cesium'
 
 export default {
   components: {
@@ -45,16 +46,17 @@ export default {
   methods: {
 
     createVal () {
-      this.nodesList = { 'primitives': [], 'model': [], 'tip': [], 'html': [] }
+      this.nodesList = { 'primitives': [], 'model': [], 'tip': [], 'html': [], 'layer': [] }
     },
 
-    init () {
-
+    init (uniCore) {
+      window.uniCore = uniCore;
       this.nodes = [];
       this.initPrimitiveNodes();
       this.initComplexModelNodes();
       this.initTipNodes();
       this.initHTMLTipNodes();
+      this.initLayerNodes();
 
     },
 
@@ -102,7 +104,7 @@ export default {
         newNode.open = false;
         this.nodes.push(newNode);
 
-        uniCore.model.fetchPropertys(e.propertysURL).then((data) => {
+        window.uniCore.model.fetchPropertys(e.propertysURL).then((data) => {
 
           data.forEach((ele, i) => {
             // 这里可以设置radio变量为按楼层过滤、按类名过滤或是按族family过滤
@@ -189,7 +191,7 @@ export default {
 
     initTipNodes () {
       this.getTip();
-      if (Object.keys(this.nodesList['tip']).length !== 0) this.nodes.push({ checked: true, id: -2, name: "🌳 普通标签结构树", open: false, pid: -10000 })
+      if (Object.keys(this.nodesList['tip']).length !== 0) this.nodes.push({ checked: true, id: -2, name: "🌳 普通标签信息树", open: false, pid: -10000 })
       Object.entries(this.nodesList['tip']).forEach((e, index) => {
         // 将第一个index设为2开始，将-1留给pid使用
         index = this.idNum + 1
@@ -241,10 +243,30 @@ export default {
 
     },
 
+    initLayerNodes () {
+      this.getLayer();
+      if (this.nodesList['layer'].length !== 0) this.nodes.push({ checked: true, id: -4, name: "🌎 GIS数据", open: false, pid: -10000 })
 
+      this.nodesList['layer'].forEach((e, index) => {
+        // 将第一个index设为2开始，将-1留给pid使用
+        index = this.idNum + 1
+        // 计算使用了多少个idNum
+        this.idNum += 1
+
+        let newNode = {};
+        newNode.id = index + e.id;
+        newNode.pid = -4; // 底图数据id为-4
+        newNode.name = e.id;
+        newNode.checked = e.checked;
+        newNode.open = false;
+        this.nodes.push(newNode);
+
+      })
+
+    },
 
     getPrimitive () {
-      this.nodesList['primitives'] = uniCore.model.getPrimitivesName();
+      this.nodesList['primitives'] = window.uniCore.model.getPrimitivesName();
     },
 
     getTip () {
@@ -286,6 +308,28 @@ export default {
 
     },
 
+    getLayer () {
+      // 底图
+      window.viewer.imageryLayers._layers.forEach((e, index) => {
+        this.nodesList['layer'].push({ 'id': '底图数据-' + (index + 1), 'tile': e, 'checked': true });
+
+      })
+      // 地形
+      if (!!window.viewer.terrainProvider) {
+        this.nodesList['layer'].push({ 'id': '地形数据', 'tile': window.viewer.terrainProvider, 'checked': true });
+        window.terrainProvider = window.viewer.terrainProvider;
+      }
+
+      // 自带天体、天空盒
+      this.nodesList['layer'].push({ 'id': '月球', 'tile': window.viewer.scene.moon, 'checked': window.viewer.scene.moon.show });
+      this.nodesList['layer'].push({ 'id': '太阳', 'tile': window.viewer.scene.sun, 'checked': window.viewer.scene.sun.show });
+      this.nodesList['layer'].push({ 'id': '雾气', 'tile': window.viewer.scene.fog, 'checked': window.viewer.scene.fog.show });
+      this.nodesList['layer'].push({ 'id': '天空盒', 'tile': window.viewer.scene.skyBox, 'checked': window.viewer.scene.skyBox.show });
+      this.nodesList['layer'].push({ 'id': '大气层', 'tile': window.viewer.scene.skyAtmosphere, 'checked': window.viewer.scene.skyAtmosphere.show });
+      this.nodesList['layer'].push({ 'id': '地球', 'tile': window.viewer.scene.globe, 'checked': window.viewer.scene.globe.show });
+
+    },
+
     onCheck (evt, treeId, treeNode) {
       let that = this;
       getParentNodes(treeNode);
@@ -301,7 +345,7 @@ export default {
             node.children.forEach(nodes => {
               if (nodes.checked) primitivesShowList.push(nodes.name);
             })
-            uniCore.model.setPrimitivesShow(primitivesShowList)
+            window.uniCore.model.setPrimitivesShow(primitivesShowList)
 
 
           } else if (parentNode.id === -1) {
@@ -317,23 +361,17 @@ export default {
               that.setModelTree(treeNode);
             }
           } else if (parentNode.id === -2) {
-            // 标签结构树
+            // 普通标签信息树
             that.setTipTree(treeNode);
 
           } else if (parentNode.id === -3) {
-            // HTML标签结构树
+            // HTML标签信息树
             that.setHTMLTipTree(treeNode);
 
+          } else if (parentNode.id === -4) {
+            // 底图数据
+            that.setLayer(treeNode);
           }
-
-
-
-
-
-
-
-
-
 
         }
       }
@@ -459,7 +497,7 @@ export default {
       findChild(treeNode)
 
       allNode.forEach(e => {
-        uniCore.tip.hideTipByIDText(e.id, e.text, !e.checked);
+        window.uniCore.tip.hideTipByIDText(e.id, e.text, !e.checked);
       })
 
 
@@ -493,6 +531,42 @@ export default {
 
         }
       })
+    },
+
+    /**
+     * 设置底图数据
+     */
+    setLayer (treeNode) {
+      let that = this;
+      // 找到节点下所有的子节点
+      let allNode = [];
+      let findChild = function (array) {
+
+        if (array.hasOwnProperty("children")) {
+          for (let i = 0; i < array.children.length; i++) {
+            findChild(array.children[i])
+          }
+        } else {
+          allNode.push({ "id": array.name, "tile": that.nodesList['layer'].find(e => { if (e.id === array.name) return e })?.tile, 'checked': array.checked })
+        }
+
+      }
+
+      findChild(treeNode)
+
+      allNode.forEach(async e => {
+        if (e.id === '地形数据') {
+          // console.log(window.viewer.terrainProvider);
+          window.viewer.terrainProvider = e.checked === true ? window.terrainProvider : new Cesium.EllipsoidTerrainProvider({});
+        } else if (e.id.split('-')[0] === '底图数据') {
+          // 底图数据
+          e.tile.show = e.checked
+        } else {
+          // 天体、天空盒
+          e.tile.show = e.checked
+        }
+      })
+
     },
 
     handleCreated: function (ztreeObj) {
