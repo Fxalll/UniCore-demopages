@@ -59,7 +59,7 @@ export default {
       uniCore.init("unicoreContainer");
 
       // 视角初始化
-      uniCore.position.buildingPosition(uniCore.viewer, [113.12380548015745, 28.250758831850005, 700], -20, -45, 1);
+      uniCore.position.buildingPosition(uniCore.viewer, [113.1260943923287, 28.23651730759447, 2000], -20, -45, 1);
 
       // 模型示例1
       // 开始触发加载进度条
@@ -152,6 +152,9 @@ export default {
       uniCore.tip.createHtmlTip("test", [113.12098820449636, 28.256150218457687, 130], false)
       uniCore.tip.createHtmlTip("test2", [113.12374548015745, 28.256150218457687, 50], false)
 
+      // 加入图片标签
+      uniCore.tip.createImgTip('图片标签', "../static/img/ui/shezhi.png", [113.12248820449636, 28.254850218457687, 70], null, () => { alert("你点击到了图片标签") })
+
 
       // 多底图分屏，载入 openstreetmap 底图
       this.$refs.lsSetId.init(new Cesium.UrlTemplateImageryProvider({
@@ -159,15 +162,6 @@ export default {
         subdomains: ["a", "b", "c", "d"],
 
       }));
-
-      // 加入挖地效果
-      let earthPositionList = [
-        uniCore.position.axis2cartesian3([113.13092936007925, 28.2212878193382, 49.55456090447781]),
-        uniCore.position.axis2cartesian3([113.11202236328967, 28.227796500536492, 42.05066336649502]),
-        uniCore.position.axis2cartesian3([113.10916252946248, 28.21578895414394, 49.77329434317584]),
-        uniCore.position.axis2cartesian3([113.12149788290405, 28.21009254939709, 44.232610784104175]),
-        uniCore.position.axis2cartesian3([113.12832582282637, 28.210479634680855, 37.374018160173996]),
-      ]
 
       // 加入运动小车
       uniCore.model.addGltf({
@@ -180,9 +174,7 @@ export default {
         url: '../../../assets/gltf/CesiumMilkTruck.glb',
         property: null
       }).then(cityModel => {
-        let axis = [[113.13173178095892, 28.230730999960816]
-          , [113.11729654546554, 28.230237006487613]
-          , [113.11743080396153, 28.239682643150296]
+        let axis = [[113.11743080396153, 28.239682643150296]
           , [113.11725785946352, 28.248622077135227]
           , [113.13152129373469, 28.24872127157565]
           , [113.13140943384197, 28.26102384106443]
