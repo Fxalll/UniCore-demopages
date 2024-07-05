@@ -1,5 +1,5 @@
 <template>
-  <div id="unicoreContainer">
+  <div id="unicoreContainer" @click="mouseClick($event)">
     <!-- HTML 标签测试开始 -->
     <div id="test">你可以将任意HTML元素固定在某处</div>
     <div id="test2">这是第二个HTML标签</div>
@@ -160,12 +160,52 @@ export default {
 
       }));
 
+      // 加入挖地效果
+      let earthPositionList = [
+        uniCore.position.axis2cartesian3([113.13092936007925, 28.2212878193382, 49.55456090447781]),
+        uniCore.position.axis2cartesian3([113.11202236328967, 28.227796500536492, 42.05066336649502]),
+        uniCore.position.axis2cartesian3([113.10916252946248, 28.21578895414394, 49.77329434317584]),
+        uniCore.position.axis2cartesian3([113.12149788290405, 28.21009254939709, 44.232610784104175]),
+        uniCore.position.axis2cartesian3([113.12832582282637, 28.210479634680855, 37.374018160173996]),
+      ]
+
+      // 加入运动小车
+      uniCore.model.addGltf({
+        lon: 0,
+        lat: 0,
+        height: 0
+      }, {
+        id: "车",
+        name: null,
+        url: '../../../assets/gltf/CesiumMilkTruck.glb',
+        property: null
+      }).then(cityModel => {
+        let axis = [[113.13173178095892, 28.230730999960816]
+          , [113.11729654546554, 28.230237006487613]
+          , [113.11743080396153, 28.239682643150296]
+          , [113.11725785946352, 28.248622077135227]
+          , [113.13152129373469, 28.24872127157565]
+          , [113.13140943384197, 28.26102384106443]
+          , [113.1181019813925, 28.2610317815719]
+          , [113.11806215469495, 28.25746976282241]
+        ];
+        uniCore.animation.updatePosition(axis, (resAxis, index) => {
+          // 根据实时坐标修改路径和偏转角
+          uniCore.model.changeModelPos(cityModel, resAxis, [uniCore.animation.caluRealTimeRotate(axis, index), 0, 0], [20, 20, 20]);
+        }, () => { console.log("finish!") }, 2, 0.01, [cityModel])
+      })
+
+
       // 原本设计是作为开关调用的，这里使用定时器先展示功能
       setTimeout(() => {
         // 图层树初始化
         this.$refs.lcSetId.init(uniCore);
-      }, 1000)
+      }, 3000)
 
+    },
+
+    mouseClick (e) {
+      console.log(window.uniCore.position.screen2axis(uniCore.viewer, e));
     }
 
   }
