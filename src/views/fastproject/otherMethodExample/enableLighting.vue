@@ -29,9 +29,6 @@ export default {
       let uniCore = new UniCore(config, accessToken);
       uniCore.init("unicoreContainer");
 
-      // 视角初始化
-      uniCore.position.buildingPosition(uniCore.viewer, [113.12380548015745, 28.250758831850005, 700], -20, -45, 1);
-
       uniCore.viewer.scene.globe.enableLighting = true;
 
       uniCore.viewer.shadows = true

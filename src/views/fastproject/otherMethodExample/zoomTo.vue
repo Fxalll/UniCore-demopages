@@ -37,7 +37,7 @@ export default {
       }
       //加载3dtiles
       uniCore.model.createTileset('../../../assets/3Dtiles/changshaCityModel/tileset.json', options).then(cityLeft => {
-        uniCore.model.change3DTilesPos(cityLeft, [113.12098820449636, 28.256150218457687, 50])
+        uniCore.model.change3DTilesPos(cityLeft, [113.12098820449636, 28.256150218457687, 50000])
 
         uniCore.viewer.flyTo(cityLeft)
       })
