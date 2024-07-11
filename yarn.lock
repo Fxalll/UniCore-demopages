@@ -6349,10 +6349,10 @@
   "resolved" "https://registry.npmmirror.com/unicode-property-aliases-ecmascript/-/unicode-property-aliases-ecmascript-2.1.0.tgz"
   "version" "2.1.0"
 
-"unicore-sdk@^1.3.5":
-  "integrity" "sha512-U1iLhEkJZs7iQ98Ku3tIT14B3HQci304oDx29kJV/xlbDDRjLDlTt8FXwL82FkJNs9Dta9R4f1X/fxn6AiRBcw=="
-  "resolved" "https://registry.npmjs.org/unicore-sdk/-/unicore-sdk-1.3.5.tgz"
-  "version" "1.3.5"
+"unicore-sdk@^1.3.8":
+  "integrity" "sha512-Jx/LGUZRV8jGfx66nrF9FbizwD0RzfERBm/bDtZPTx1/8oynKWmK7c+gksO8VVIm1mR9GUGtAtM1Z3O1gV/WsQ=="
+  "resolved" "https://registry.npmjs.org/unicore-sdk/-/unicore-sdk-1.3.8.tgz"
+  "version" "1.3.8"
   dependencies:
     "cesium" "1.118.0"
     "compression-webpack-plugin" "11.1.0"

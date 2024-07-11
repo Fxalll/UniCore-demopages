@@ -1,0 +1,177 @@
+<template>
+  <div id="unicoreContainer">
+    <!-- 图层管理树卡片开始 -->
+    <lcSet ref="lcSetId"></lcSet>
+    <!-- 图层管理树卡片结束 -->
+    <!-- HTML 标签测试开始 -->
+    <div id="test">你可以将任意HTML元素固定在某处</div>
+    <div id="test2">这是第二个HTML标签</div>
+    <!-- HTML 标签测试结束 -->
+  </div>
+</template>
+
+<script>
+import { UniCore } from 'unicore-sdk'
+import { config } from 'unicore-sdk/unicore.config'
+import 'unicore-sdk/Widgets/widgets.css'
+import lcSet from '@/components/LayerControlSet/index.vue'; //图层管理树组件
+
+import * as Cesium from 'cesium'
+
+export default {
+
+  components: {
+    lcSet
+  },
+  // 生命周期 - 挂载完成（可以访问DOM元素）
+  mounted () {
+    this.init();
+  },
+
+  // 方法集合
+  methods: {
+
+    /**
+    * 通用图形引擎初始化
+    */
+    init () {
+
+      // 初始化UniCore
+
+      // 目前采用Cesium的地形&底图数据，这里配置Cesium的token
+      let accessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjEwMzI4My01MjBmLTQzYzktOGZiMS0wMDRhZjE0N2IyMGIiLCJpZCI6MTc1NzkyLCJpYXQiOjE3MTM3NzQ3OTh9.zU-R4MNvHr8rvn1v28PQfDImyutnpPF2lmEgGeSPckQ";
+      // 初始化unicore
+      let uniCore = new UniCore(config, accessToken);
+      uniCore.init("unicoreContainer");
+      window.uniCore = uniCore;
+      let viewer = uniCore.viewer;
+
+      // 视角初始化
+      uniCore.position.buildingPosition(viewer, [113.12380548015745, 28.250758831850005, 700], -20, -45, 1);
+
+      // 模型示例1
+      const options = {
+        id: '小别墅1号示例',
+        url: '../../assets/3Dtiles/sample3_方法2_小别墅属性(1)/tileset.json',
+        propertysURL: '../../assets/3Dtiles/sample3_方法2_小别墅属性(1)/01 小别墅.json'
+      }
+      //加载3dtiles
+      uniCore.model.createTileset(options.url, options, (tileset) => {
+        let customShader = new Cesium.CustomShader({
+          // lightingModel: Cesium.LightingModel.UNLIT,
+          lightingModel: Cesium.LightingModel.PBR,
+          //片元着色器
+          fragmentShaderText: `
+          void fragmentMain(FragmentInput fsInput, inout czm_modelMaterial material) {
+            vec3 positionMC = fsInput.attributes.positionMC;
+            //此处以下为光线效果
+            material.diffuse += material.diffuse * (1.0);
+          }`
+        })
+
+        tileset.customShader = customShader
+      }).then(cityModel => {
+        uniCore.model.changeModelPos(cityModel, [113.12098820449636, 28.256150218457687, 130], [0, 0, 0], [23.8, 23.8, 23.8])
+
+        // 绑定信息树
+        let modelOption = {
+          ...options,
+          tileset: cityModel
+        }
+        this.$refs.lcSetId.nodesList['model'].push(modelOption)
+
+      })
+
+      // 模型示例2
+      const options_2 = {
+        id: '小别墅2号示例',
+        url: '../../assets/3Dtiles/sample3_方法2_小别墅属性(1)/tileset.json',
+        propertysURL: '../../assets/3Dtiles/sample3_方法2_小别墅属性(1)/01 小别墅.json'
+      }
+      //加载3dtiles
+      uniCore.model.createTileset(options_2.url, options_2).then(cityModel => {
+        uniCore.model.changeModelPos(cityModel, [113.11098820449636, 28.257150218457687, 130], [0, 0, 0], [23.8, 23.8, 23.8])
+
+        // 绑定信息树
+        let modelOption = {
+          ...options_2,
+          tileset: cityModel
+        }
+        this.$refs.lcSetId.nodesList['model'].push(modelOption)
+      })
+
+      // 开启右键菜单、点击高亮、属性property
+      uniCore.interact.setTilesRightClickMenu([{
+        id: '小别墅1号示例',
+        url: '../../assets/3Dtiles/sample3_方法2_小别墅属性(1)/tileset.json',
+        propertysURL: '../../assets/3Dtiles/sample3_方法2_小别墅属性(1)/01 小别墅.json'
+      }, {
+        id: '小别墅2号示例',
+        url: '../../assets/3Dtiles/sample3_方法2_小别墅属性(1)/tileset.json',
+        propertysURL: '../../assets/3Dtiles/sample3_方法2_小别墅属性(1)/01 小别墅.json'
+      }], (property) => console.log(property), (pickObj) => console.log(pickObj), () => console.log("BIM"), () => console.log("GIS"));
+
+
+
+      // 加入墙体图元 primitives
+      uniCore.model.paintWall("墙体测试", [[113.12380548015745, 28.260758831850005], [113.12380548015745, 28.240758831850005]], 500, 100, "#e46962")
+      uniCore.model.paintLine("线条测试", [[113.12123548015745, 28.280758831850005], [113.12380548015745, 28.240758831850005], [113.12070548015745, 28.240758831850005]], 75, "#c3e88d", 5)
+      uniCore.model.createMaterialLine([113.12123548015745, 28.255978831850005, 50], [113.12123548015745, 28.245978831850005, 80])
+
+      // 加入水流特效 entities
+      uniCore.model.createMaterialLine([113.12123548015745, 28.255978831850005, 50], [113.12123548015745, 28.245978831850005, 80])
+
+      // 加入普通标签
+      uniCore.tip.createTip('标签组测试1', "普通标签", [113.12380548015745, 28.255758831850005, 150], null, '#0361f3', 1, [250, 1.0, 550, 1.0], [250000, 1.0, 5500000, 0.0])
+
+      // 加入带有点击事件的标签
+      uniCore.tip.createTip('标签组测试1', "可点击标签-1", [113.12390548015745, 28.255568831850005, 100], () => { alert("你点击了 可点击标签-1") }, '#f3125f', 1, [250, 1.0, 550, 1.0], [250000, 1.0, 5500000, 0.0])
+      uniCore.tip.createTip('标签组测试2', "可点击标签-2", [113.12374548015745, 28.256758831850005, 100], () => { alert("可点击标签-2 被你点击到了~") }, '#f3125f', 1, [250, 1.0, 550, 1.0], [250000, 1.0, 5500000, 0.0])
+
+      // 加入 HTML 标签
+      uniCore.tip.createHtmlTip("test", [113.12098820449636, 28.256150218457687, 130], false)
+      uniCore.tip.createHtmlTip("test2", [113.12374548015745, 28.256150218457687, 50], false)
+
+
+      // 原本设计是作为开关调用的，这里使用定时器先展示功能
+      setTimeout(() => {
+        // 图层树初始化
+        this.$refs.lcSetId.init(uniCore);
+      }, 1000)
+
+    }
+
+  }
+
+}
+</script>
+<style scoped>
+#unicoreContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#test {
+  position: absolute;
+  font-size: 13px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 5px 20px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 999;
+}
+#test2 {
+  position: absolute;
+  font-size: 13px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 5px 20px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 999;
+}
+</style>
