@@ -19,6 +19,14 @@ export default {
   // 生命周期 - 挂载完成（可以访问DOM元素）
   mounted () {
     this.init();
+    setTimeout(() => {
+      // 提示
+      this.$message({
+        showClose: true,
+        message: '请点击模型，右键点击切换到 BIM 场景，以查看 BIM 视图盒子组件',
+        duration: 0
+      });
+    }, 3000)
   },
 
   // 方法集合
@@ -28,6 +36,9 @@ export default {
     * 通用图形引擎初始化
     */
     init () {
+
+
+
 
       // 初始化UniCore
 
@@ -47,6 +58,9 @@ export default {
       //加载3dtiles
       uniCore.model.createTileset('../../assets/3Dtiles/sample3_方法2_小别墅属性(1)/tileset.json', options).then(cityLeft => {
         uniCore.model.changeModelPos(cityLeft, [113.12098820449636, 28.256150218457687, 50])
+
+        // 飞行定位
+        uniCore.viewer.flyTo(cityLeft);
       })
 
       // 模型示例2
