@@ -17,6 +17,9 @@
         @onCheck="onCheck"
         @onCreated="handleCreated"
       />
+      <span class="loadingText" v-if="nodes.length === 0"
+        >图层管理树加载中..</span
+      >
     </el-card>
   </div>
 </template>
@@ -69,7 +72,7 @@ export default {
 
     initPrimitiveNodes () {
       this.getPrimitive();
-      if (this.nodesList['primitives'].length !== 0) this.nodes.push({ checked: true, id: 0, name: "⭐️ 全部图元", open: false, pid: -10000 })
+      if (this.nodesList['primitives'].length !== 0) this.nodes.push({ checked: true, id: 0, name: "⭐️ 全部图元", open: true, pid: -10000 })
       this.nodesList['primitives'].forEach((e, index) => {
         // 将第一个index设为2开始，将-1留给pid使用
         index = this.idNum + 1
@@ -682,6 +685,11 @@ export default {
     background: #ffffff00;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .loadingText {
+    color: #adadad94;
+    margin-left: 24px;
   }
 }
 
