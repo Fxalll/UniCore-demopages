@@ -92,6 +92,7 @@ export default {
 
     initComplexModelNodes () {
       let myNodes = []
+      let nodesRes = []
       this.idNum = 0
       const level = []
       const category = []
@@ -147,7 +148,7 @@ export default {
                 myNodes.open = false
                 myNodes.checked = true
                 level.push(myNodes.id)
-                this.nodes.push(myNodes)
+                nodesRes.push(myNodes)
                 myNodes = []
               }
             }
@@ -161,7 +162,7 @@ export default {
                 myNodes.open = false
                 myNodes.checked = true
                 category.push(myNodes.id)
-                this.nodes.push(myNodes)
+                nodesRes.push(myNodes)
                 myNodes = []
               }
             }
@@ -175,7 +176,7 @@ export default {
                 myNodes.open = false
                 myNodes.checked = true
                 family.push(myNodes.id)
-                this.nodes.push(myNodes)
+                nodesRes.push(myNodes)
                 myNodes = []
               }
             }
@@ -188,7 +189,10 @@ export default {
             item.name = ele.name
             item.checked = true
             item.instanceid = ele._BATCHID === undefined ? ele.ElementID : ele._BATCHID;
-            this.nodes.push(item)
+            nodesRes.push(item)
+
+            this.nodes.push(...nodesRes)
+            nodesRes = [];
 
           })
 
@@ -600,7 +604,6 @@ export default {
         this.isDowm = true
         var distanceX = event.clientX - this.selectElement.offsetLeft
         var distanceY = event.clientY - this.selectElement.offsetTop
-        console.log(div1);
         document.onmousemove = function (ev) {
           var oevent = ev || event
           div1.style.left = oevent.clientX - distanceX + 'px'
