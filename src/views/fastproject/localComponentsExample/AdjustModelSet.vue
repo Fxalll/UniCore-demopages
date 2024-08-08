@@ -67,7 +67,6 @@ export default {
         uniCore.model.changeModelPos(cityModel, [113.12098820449636, 28.256150218457687, 50], [90, 0, 0])
       })
 
-
       this.$refs.amSetId.init(uniCore);
 
     }
