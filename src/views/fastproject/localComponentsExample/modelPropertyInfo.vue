@@ -1,11 +1,4 @@
-<!--
- * @Author: 卢佳康 ljk3079960656@outlook.com
- * @Date: 2024-07-11 14:49:23
- * @LastEditors: 卢佳康 ljk3079960656@outlook.com
- * @LastEditTime: 2024-07-11 14:49:39
- * @FilePath: \vue-uni-demo\src\views\fastproject\localComponentsExample\modelPropertyInfo.vue
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
+
 <template>
   <div id="unicoreContainer">
     <!-- 属性窗口组件窗口卡片开始 -->
